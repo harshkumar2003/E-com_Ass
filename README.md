@@ -1,13 +1,8 @@
+## API Endpoints & Screenshots
+
 ### Add Product
 **POST** `/products`
 
-**Request Body**
-```json
-{
-  "name": "Mobile Phone",
-  "price": 80000,
-  "quantity": 50
-}
 <img width="1063" height="943" alt="image" src="https://github.com/user-attachments/assets/a48b4c37-1454-4141-a275-71f7ba015c68" />
 
 - `GET /products/{id}`
