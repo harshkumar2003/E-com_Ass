@@ -1,4 +1,4 @@
-package com.e_com.order_service.controller;
+package com.ecom.order_service.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.e_com.order_service.model.Orders;
-import com.e_com.order_service.services.OrderService;
+import com.ecom.order_service.model.Orders;
+import com.ecom.order_service.services.OrderService;
 
 @RestController
 @RequestMapping("/orders")

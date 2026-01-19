@@ -1,8 +1,10 @@
 spring:
   application:
-    name: ORDER-SERVICE
+    name: order-service   # OR product-service (must be unique!)
 
 eureka:
   client:
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
       defaultZone: http://localhost:8762/eureka

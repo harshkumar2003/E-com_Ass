@@ -1,4 +1,6 @@
-package com.e_com.product_service.controller;
+package com.ecom.product_service.controller;
+
+import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.e_com.product_service.model.Product;
-import com.e_com.product_service.services.ProductService;
+import com.ecom.product_service.model.Product;
+import com.ecom.product_service.services.ProductService;
 
 @RestController
 @RequestMapping("/products")
@@ -26,6 +28,12 @@ public class ProductController
     @PostMapping
     public Product addProduct(@RequestBody Product product) {
         return service.addProduct(product);
+    }
+    
+    @GetMapping
+    public List<Product> getAllProducts()
+    {
+    	return service.getAllProducts();
     }
 
     
@@ -48,5 +56,4 @@ public class ProductController
                                 @RequestParam int quantity) {
         return service.reserveStock(id, quantity);
     }
-
 }

@@ -1,4 +1,4 @@
-package com.e_com.product_service.model;
+package com.ecom.product_service.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -32,7 +32,7 @@ public class Product
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-	public Integer getStock() {
+	public int getStock() {
 		return stock;
 	}
 	public void setStock(Integer stock) {
@@ -40,6 +40,6 @@ public class Product
 	}
 	private String name;
     private Double price;
-    private Integer stock;
+    private int stock;
 
 }
